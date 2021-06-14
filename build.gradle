@@ -48,6 +48,8 @@ dependencies {
 	implementation "org.mapstruct:mapstruct:$mapstructVersion"
 	compileOnly 'org.projectlombok:lombok'
 	compileOnly "javax.validation:validation-api:$validationVersion"
+	compileOnly group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
+	compileOnly group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
 	runtimeOnly group: 'org.springframework.boot', name: 'spring-boot-starter-validation', version: '2.4.0'
 	annotationProcessor "org.mapstruct:mapstruct-processor:$mapstructVersion"
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
