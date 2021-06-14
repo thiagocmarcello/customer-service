@@ -33,7 +33,7 @@ compileJava {
 jar {
 	manifest {
 		attributes(
-				'Main-Class': 'br.com.teste.Application'
+				'Main-Class': 'br.com.teste.CustomerApplication'
 		)
 	}
 }
