@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "397d9d99-7c34-411b-8c14-40467fbae02d",
+		"name": "teste",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cria cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"email@email.com\",\n    \"name\": \"teste\",\n    \"birth\": \"2018-01-13\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tm-customer-service.herokuapp.com/customers",
+					"protocol": "https",
+					"host": [
+						"tm-customer-service",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca clientes paginado",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tm-customer-service.herokuapp.com/customers?page=0&size=5&sort=name",
+					"protocol": "https",
+					"host": [
+						"tm-customer-service",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"customers"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "5"
+						},
+						{
+							"key": "sort",
+							"value": "name"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualiza cliente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"email@emasil.comssss\",\n    \"name\": \"teste alterado\",\n    \"birth\": \"2018-01-13\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tm-customer-service.herokuapp.com/customers/1",
+					"protocol": "https",
+					"host": [
+						"tm-customer-service",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"customers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
