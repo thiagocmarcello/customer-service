@@ -17,12 +17,11 @@ public class CustomerStub {
                 .build();
     }
 
-    public static Customer get(final Long id) {
+    public static Customer get(final Integer year) {
         return Customer.builder()
-                .id(id)
                 .name("nome")
                 .email("email@email.com")
-                .birth(LocalDate.now())
+                .birth(LocalDate.of(year        , 1, 1))
                 .build();
     }
 }
