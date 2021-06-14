@@ -3,7 +3,7 @@ spring:
     properties:
       dialect: org.hibernate.dialect.H2Dialect
   datasource:
-    url: jdbc:h2:mem:customerdb;DB_CLOSE_DELAY=-1
+    url: jdbc:h2:mem:customerdb;
     driverClassName: org.h2.Driver
     username: sa
     password:

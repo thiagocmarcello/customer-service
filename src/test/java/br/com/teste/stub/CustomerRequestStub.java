@@ -12,7 +12,15 @@ public class CustomerRequestStub {
     public static CustomerRequest get() {
         return CustomerRequest.builder()
                 .name("nome")
-                .email("email@email.com")
+                .email("emailstub@email.com")
+                .birth(LocalDate.now())
+                .build();
+    }
+
+    public static CustomerRequest get(final String name) {
+        return CustomerRequest.builder()
+                .name(name)
+                .email("emailstub@email.com")
                 .birth(LocalDate.now())
                 .build();
     }

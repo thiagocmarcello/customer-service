@@ -16,4 +16,13 @@ public class CustomerStub {
                 .birth(LocalDate.now())
                 .build();
     }
+
+    public static Customer get(final Long id) {
+        return Customer.builder()
+                .id(id)
+                .name("nome")
+                .email("email@email.com")
+                .birth(LocalDate.now())
+                .build();
+    }
 }
