@@ -3,4 +3,3 @@ services:
   customer:
     build: ./
     working_dir: /
-    scale: 2
